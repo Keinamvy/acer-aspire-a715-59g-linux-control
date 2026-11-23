@@ -33,6 +33,7 @@ The entire suite operates **100% WMI-free** with **zero runtime WMI (`acer_rth_w
 | [battery.sh](battery.sh) | Battery telemetry (`0x10`, `0x38..0x39`, `0x94..0x95`) and Direct EC FlexiCharger (`0xCB` write / `ECMD 0xB1` XRAM `0x06D0..0x06D2` live readback + residual `0xF8..0xFB` snapshot check, zero local cache, zero WMI) |
 | [peripherals.sh](peripherals.sh) | Webcam (`0xB8` `0xA1`), Trackpad (`ELAN0412` + `0xB8` `0xA5`), Lid State/Wake (`EC[0x03]` `LSTE`/`LWKE` + `PNP0C0D:00`), Clamshell Lid-Close Inhibit (`systemd-inhibit`), and Keyboard Locks (`EC[0xE2]`, `EC[0xEC]`) |
 | [README.md](README.md) | Hardware register map, GUI/daemon/tray architecture, and CLI usage guide |
+| [docs/wiki/](docs/wiki/Home.md) | Complete multi-page documentation ready for the GitHub Wiki |
 
 ---
 
