@@ -1,0 +1,17 @@
+[Unit]
+Description=Acer Aspire A715-59G System Tray Indicator
+After=graphical-session.target
+PartOf=graphical-session.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/acer-aspire-a715-59g-linux-control
+PassEnvironment=DISPLAY WAYLAND_DISPLAY XDG_RUNTIME_DIR DBUS_SESSION_BUS_ADDRESS QT_QPA_PLATFORM
+ExecStart=/usr/bin/python3 /opt/acer-aspire-a715-59g-linux-control/tray.py
+Restart=on-failure
+RestartSec=3
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=graphical-session.target default.target

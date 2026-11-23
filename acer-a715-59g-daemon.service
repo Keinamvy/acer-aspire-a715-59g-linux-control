@@ -1,0 +1,16 @@
+[Unit]
+Description=Acer Aspire A715-59G EC/ACPI Control Daemon
+After=local-fs.target systemd-modules-load.service
+Wants=systemd-modules-load.service
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/acer-aspire-a715-59g-linux-control
+ExecStart=/usr/bin/python3 /opt/acer-aspire-a715-59g-linux-control/daemon.py --boot-init --socket /run/acer-a715-59g-control.sock
+Restart=on-failure
+RestartSec=3
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

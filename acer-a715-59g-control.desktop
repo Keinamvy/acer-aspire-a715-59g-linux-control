@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Acer Aspire A715-59G Control Center
+GenericName=Hardware & EC Control Center
+Comment=Control power profiles, CPU RAPL, fans, keyboard RGB, and battery FlexiCharger on Acer Aspire A715-59G
+Exec=/opt/acer-aspire-a715-59g-linux-control/gui.sh
+Icon=preferences-system
+Terminal=false
+StartupNotify=true
+Categories=Settings;HardwareSettings;
+Keywords=Acer;Aspire;Fan;Power;RAPL;RGB;Keyboard;Battery;FlexiCharger;
