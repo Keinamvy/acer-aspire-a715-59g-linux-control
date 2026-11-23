@@ -23,11 +23,11 @@
 
 | Subsystem | Capabilities | Wiki Guide |
 |---|---|---|
-| **Power & dGPU** | `Quiet` (`15/30W`, `25W` dGPU), `Power Saving` (`15/30W`, RTD3 `D3cold`), `Entertainment` (`45/115W`, `60W`), `Performance` (`90/115W`, `75W`), `--pl1`/`--pl2` | [Power Profiles and dGPU](Power-Profiles-and-dGPU.md) |
-| **Fans & Thermals** | Stock 3 modes (`Auto`, `Max`, `Custom Curve` + `Reset`), dual 4-node CPU/GPU XRAM curves, `Fan Offset (0xE7)`, read-only curve plotting in Quiet/Eco | [Fans and Thermal Curves](Fans-and-Thermal-Curves.md) |
-| **Keyboard (`KBType=6`)** | 1-zone brightness (`0..255`), RGB color + `--cc-scale`, 15-color breathing (`0xCA sub 0x0F`), idle timeout (`0xD4`) | [Keyboard Lighting (KBType=6)](Keyboard-Lighting-KBType6.md) |
-| **Battery** | EC telemetry + Direct EC `0xCB` FlexiCharger (`80%` / `100%` / custom thresholds) + live XRAM `0x06D0..0x06D2` readback | [Battery FlexiCharger](Battery-FlexiCharger.md) |
-| **Peripherals & Lid** | Webcam (`0xB8 0xA1`), Trackpad (`0xB8 0xA5` + `ELAN`), Lid Wake, Clamshell `systemd-inhibit`, Win-Key / Fn-Swap / Fn-Lock | [Peripherals and Clamshell](Peripherals-and-Clamshell.md) |
+| **Power & dGPU** | `Quiet` (`15/30W`, `25W` dGPU), `Power Saving` (`15/30W`, RTD3 `D3cold`), `Entertainment` (`45/115W`, `60W`), `Performance` (`90/115W`, `75W`), `--pl1`/`--pl2` | [Power Profiles and dGPU](Power-Profiles-and-dGPU) |
+| **Fans & Thermals** | Stock 3 modes (`Auto`, `Max`, `Custom Curve` + `Reset`), dual 4-node CPU/GPU XRAM curves, `Fan Offset (0xE7)`, read-only curve plotting in Quiet/Eco | [Fans and Thermal Curves](Fans-and-Thermal-Curves) |
+| **Keyboard (`KBType=6`)** | 1-zone brightness (`0..255`), RGB color + `--cc-scale`, 15-color breathing (`0xCA sub 0x0F`), idle timeout (`0xD4`) | [Keyboard Lighting (KBType=6)](Keyboard-Lighting-KBType6) |
+| **Battery** | EC telemetry + Direct EC `0xCB` FlexiCharger (`80%` / `100%` / custom thresholds) + live XRAM `0x06D0..0x06D2` readback | [Battery FlexiCharger](Battery-FlexiCharger) |
+| **Peripherals & Lid** | Webcam (`0xB8 0xA1`), Trackpad (`0xB8 0xA5` + `ELAN`), Lid Wake, Clamshell `systemd-inhibit`, Win-Key / Fn-Swap / Fn-Lock | [Peripherals and Clamshell](Peripherals-and-Clamshell) |
 
 ---
 
@@ -40,4 +40,4 @@ cd acer-aspire-a715-59g-linux-control
 ./gui.sh
 ```
 
-See [Installation and Setup](Installation-and-Setup.md) for Debian `.deb` installation, dependencies, and user-only setup.
+See [Installation and Setup](Installation-and-Setup) for Debian `.deb` installation, dependencies, and user-only setup.
